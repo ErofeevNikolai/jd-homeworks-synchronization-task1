@@ -38,10 +38,4 @@ public class Buyer {
         thread = new Thread(logick);
         thread.start();
     }
-
-    public void stopBuyer() {
-    if (numberSoldCars >= Main.MAX_SOLD_CARS) {
-            thread.interrupt();
-        }
-    }
 }
