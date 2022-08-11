@@ -3,7 +3,7 @@ package ru.netology;
 import java.util.List;
 
 public class SupplierCars {
-    private final static int maxCarInShop = 3;
+    private final static int MAX_CAR_IN_SHOP = 3;
 
     public void supplyCar(List shopCar){
         new Thread(() -> {
@@ -20,7 +20,7 @@ public class SupplierCars {
                 } catch (InterruptedException e) {
                     return;
                 }
-                if(shopCar.size() > (maxCarInShop-1)){
+                if(shopCar.size() > (MAX_CAR_IN_SHOP-1)){
                     return;
                 }
             }
