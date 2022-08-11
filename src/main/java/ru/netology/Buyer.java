@@ -28,7 +28,7 @@ public class Buyer {
                         numberSoldCars++;
                         System.out.println("МАШИНА ПРОДАНА ПОКУПАТЕЛЮ " + name);
                         nameShop.remove(nameShop.size() - 1);
-                        if(numberSoldCars>10){
+                        if(numberSoldCars>Main.MAX_SOLD_CARS){
                             return;
                         }
                     }

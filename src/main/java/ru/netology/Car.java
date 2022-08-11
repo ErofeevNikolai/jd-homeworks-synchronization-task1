@@ -1,10 +1,9 @@
 package ru.netology;
 
-import java.util.Date;
 
 public class Car {
-    String name;
-    int id;
+    private String name;
+    private int id;
 
     Car(int id){
         this.name = "Toyota";
