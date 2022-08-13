@@ -6,7 +6,6 @@ import java.util.TreeMap;
 public class Buyer {
     public static int numberSoldCars = 0;
     private String name;
-    private Thread thread;
 
     Buyer(String name) {
         this.name = name;
