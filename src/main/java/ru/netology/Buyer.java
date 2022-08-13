@@ -1,6 +1,7 @@
 package ru.netology;
 
 import java.util.List;
+import java.util.TreeMap;
 
 public class Buyer {
     public static int numberSoldCars = 0;
@@ -12,7 +13,7 @@ public class Buyer {
     }
 
     public void buyCar(List nameShop) {
-        Runnable logick = (() -> {
+        new Thread(() -> {
             while (true) {
                 synchronized (nameShop) {
                     System.out.println("Покупатель " + name + " зашел в салон");
@@ -34,8 +35,6 @@ public class Buyer {
                     }
                 }
             }
-        });
-        thread = new Thread(logick);
-        thread.start();
+        }).start();
     }
 }
